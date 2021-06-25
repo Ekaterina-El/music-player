@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/musicInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/musicInfo_img"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle"
+            android:padding="20dp"
+            android:src="@drawable/music_note" />
+
+        <TextView
+            android:id="@+id/musicInfo_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/musicInfo_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/pontano_sans"
+            android:gravity="center"
+            android:text="Dobro - Мой путь"
+            android:textColor="@color/second_color"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:id="@+id/progress_music_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/musicInfo_name"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/current_music_progress"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/pontano_sans"
+                android:text="00:00"
+                android:textColor="@color/second_color"
+                android:textSize="10dp" />
+
+            <SeekBar
+                android:layout_toRightOf="@id/current_music_progress"
+                android:id="@+id/progressMusic"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:progressBackgroundTint="@color/second_color" />
+
+            <TextView
+                android:id="@+id/current_music_duration"
+                android:layout_toRightOf="@id/progressMusic"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/pontano_sans"
+                android:text="00:00"
+                android:textColor="@color/second_color"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress_music_wrapper"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:id="@+id/looping"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/loop" />
+
+
+            <ImageView
+                android:id="@+id/skip_previous"
+                android:layout_width="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/looping"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ring"
+                android:padding="5dp"
+                android:src="@drawable/skip_previous" />
+
+            <ImageView
+                android:id="@+id/togglePlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/skip_previous"
+                android:background="@drawable/ring"
+                android:padding="5dp"
+                android:src="@drawable/play_arrow" />
+
+            <ImageView
+                android:id="@+id/skip_next"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/togglePlay"
+                android:background="@drawable/ring"
+                android:padding="5dp"
+                android:src="@drawable/skip_next" />
+
+            <ImageView
+                android:id="@+id/shuffle"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/skip_next"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/shuffle" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
