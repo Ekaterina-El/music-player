@@ -47,6 +47,7 @@ This application allows you to listen to music without any restrictions. There a
 [🎬Demo - YouTube](https://www.youtube.com/watch?v=fzaGjuYYlSg)
 
 ### Srceenshots
+![image 3](https://user-images.githubusercontent.com/55324828/123393867-f6b94300-d5b7-11eb-9c78-a8dd248ab8d2.png) ![image 4](https://user-images.githubusercontent.com/55324828/123393875-f91b9d00-d5b7-11eb-9597-7a292b083a49.png) ![image 5](https://user-images.githubusercontent.com/55324828/123393879-fa4cca00-d5b7-11eb-9ee4-a2d59e35e647.png)
 
 
 <!-- CONTACT -->
